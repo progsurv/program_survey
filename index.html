@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,7 +96,7 @@
 	</br><h1>Hardwood Creek Adult Program Survey</h1>
 
 	<!-- Create Form -->
-	<form id="form">
+	<form id="form" form onsubmit="setTimeout(function(){window.location.reload();},10);">
 
 		<!-- Details -->
 
@@ -115,13 +114,13 @@
 					name="inp"> Technology</input></label>
 			<label for="inp-3">
 				<input type="checkbox"
-					name="inp"> Speakers</input></label>
+					name="inp"> Presenters</input></label>
 			<label for="inp-4">
 				<input type="checkbox"
 					name="inp"> Arts and Crafts</input></label>
 			<label for="inp-5">
 				<input type="checkbox"
-					name="inp"> Social programs(board games, language conversation clubs)</input></label>
+					name="inp"> Social programs (board/card games, language conversation clubs)</input></label>
 			<label for="inp-6">
 				<input type="checkbox"
 					name="inp"> Other (please specify in question 4)</input></label>
@@ -174,7 +173,7 @@
         </div></div>
 		<div class="form-control">
 			<label class="question" for="comment">
-				4. Please enter program ideas you might like to see at the library?
+				4. Please enter program ideas you might like to see at the library:
 			</label>
 
 			<!-- multi-line text input control -->
