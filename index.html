@@ -96,7 +96,10 @@
 	</br><h1>Hardwood Creek Adult Program Survey</h1>
 
 	<!-- Create Form -->
-	<form id="form" form onsubmit="setTimeout(function(){window.location.reload();},10);">
+	<form id="form" form onsubmit="setTimeout(function(){window.location.reload();},10);" 
+	      method="POST"
+	      action="https://script.google.com/macros/s/AKfycbyOJT0RhBhtJpGd3H0bItkxdO7zOOkWFeazOy4eiOggcncY3c7BRKbvp-60TQGC3GmXug/exec"
+	      >
 
 		<!-- Details -->
 
@@ -108,22 +111,22 @@
 			<div class="choice">
 			<label for="inp-1">
 				<input type="checkbox"
-					name="inp"> Health and wellness</input></label>
+					name="types"> Health and wellness</input></label>
 			<label for="inp-2">
 				<input type="checkbox"
-					name="inp"> Technology</input></label>
+					name="types"> Technology</input></label>
 			<label for="inp-3">
 				<input type="checkbox"
-					name="inp"> Presenters</input></label>
+					name="types"> Presenters</input></label>
 			<label for="inp-4">
 				<input type="checkbox"
-					name="inp"> Arts and Crafts</input></label>
+					name="types"> Arts and Crafts</input></label>
 			<label for="inp-5">
 				<input type="checkbox"
-					name="inp"> Social programs (board/card games, language conversation clubs)</input></label>
+					name="types"> Social programs (board/card games, language conversation clubs)</input></label>
 			<label for="inp-6">
 				<input type="checkbox"
-					name="inp"> Other (please specify in question 4)</input></label>
+					name="types"> Other (please specify in question 4)</input></label>
 		</div></div>
 		
 		<div class="form-control">
@@ -134,19 +137,19 @@
 			<div class="choice">
 			<label for="inp-1">
 				<input type="checkbox"
-					name="inp"> All ages</input></label>
+					name="age"> All ages</input></label>
 			<label for="inp-2">
 				<input type="checkbox"
-					name="inp"> 0-12</input></label>
+					name="age"> 0-12</input></label>
 			<label for="inp-3">
 				<input type="checkbox"
-					name="inp"> 12-18</input></label>
+					name="age"> 12-18</input></label>
 			<label for="inp-4">
 				<input type="checkbox"
-					name="inp"> 18-30</input></label>
+					name="age"> 18-30</input></label>
 			<label for="inp-5">
 				<input type="checkbox"
-					name="inp"> 30+</input></label>
+					name="age"> 30+</input></label>
 		</div></div>
          <div class="form-control">
             <label class="question">
@@ -161,12 +164,12 @@
                        name="when"> Weekday evenings</input>
             </label>
             <label for="weekday-daytime">
-                <input type="radio"
+                <input type="radio" 
                        id="weekday-daytime"
                        name="when"> Weekday daytimes</input>
             </label>
             <label for="weekends">
-                <input type="radio"
+                <input type="radio" 
                        id="weekends"
                        name="when"> Weekends</input>
             </label>
@@ -177,7 +180,7 @@
 			</label>
 
 			<!-- multi-line text input control -->
-			<textarea name="comment" id="comment">
+			<textarea name="comment" id="comment" name="idea">
 			</textarea>
 		</div>
 
